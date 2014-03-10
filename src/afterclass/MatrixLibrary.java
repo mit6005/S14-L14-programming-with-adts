@@ -33,16 +33,6 @@ public class MatrixLibrary {
         return new Array(array);
     }
     
-    public static Mat optimize(Mat m) {
-        if (m instanceof Product) {
-            Product p = (Product) m;
-            if (p.m1 instanceof Scalar) {
-                ...
-            } else if (p.m2 instanceof Scalar) {
-                ...
-            }
-    }
-    
     /** @return a product of two matrix expressions.  Requires m1 and m2 to be dimension-compatible,
      *  i.e. either m1.#cols = m2.#rows, or either m1 or m2 is scalar. */
     public static Mat times(Mat m1, Mat m2) {
